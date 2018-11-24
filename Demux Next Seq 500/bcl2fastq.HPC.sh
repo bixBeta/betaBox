@@ -12,8 +12,16 @@
 #SBATCH -e err.bcl2fastq
 #SBATCH -n 12
 #SBATCH --mem-per-cpu=18000
-# To display help run bash bcl2fastq.HPC.sh help
 
+#-----------------------------------------------------------------------------------------------------------------------
+# USAGE $ sbatch bcl2fastq.HPC.sh NameOfRunFolder NameOfSampleSheet NameOfPI
+#-----------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+# To display help run bash bcl2fastq.HPC.sh help
 if [  $1 == "help"  ]; then
         echo ""
         echo "#-----------------------------------------------------------------------------------------------------------------------"
