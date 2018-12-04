@@ -10,7 +10,8 @@
           $ bash countMatrix.sh
           
   ### Step 4: Use the following command to run the final DESeq2.R script:
-          $ RScript DESeq2.R <Experiment.Name> <Numerator> <Denominator> 
+          $ RScript DESeq2.R <Experiment.Name> <Numerator> <Denominator> # (OS X)
+          $ Rscript DESeq2.R <Experiment.Name> <Numerator> <Denominator> # (Linux)
           
           
   
