@@ -4,21 +4,15 @@ import pandas as pd
 import os;
 
 os.getcwd( )
-os.chdir('/Users/bix/Desktop/subset.0021/')
+os.chdir('/Users/bix/Desktop/subset.0021/0036')
+os.listdir()
+#pd.read_csv("cpGs.genes.csv")
+barCode = pd.read_csv("key.csv")
 
-pd.read_csv("cpGs.genes.csv")
-barCode = pd.read_csv("barCode.to.ID.csv")
-
-d = barCode('val1').to_dict()
-betas = pd.read_csv("0021.geneSubset.csv")
-
-# betas.index = betas['cpGs']
+betas = pd.read_csv("bb.csv")
 
 betas.set_index('cpGs')
 
+final = betas.rename(columns=dict(zip(barCode['centrix'], barCode['Sample_Name'])))
 
-#df.rename(columns=dict(zip(barCode["val1"], [""])))
-betas.rename(columns=dict(zip(barCode['val1'], barCode['val2'])))
-
-#df1.columns=[df2['val2']]
-#betas.columns=[barCode['val2']]
+final.to_csv("TEST.csv")
