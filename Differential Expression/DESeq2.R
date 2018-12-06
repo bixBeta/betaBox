@@ -99,12 +99,12 @@ write.table(as.data.frame(assay(vsd)),file = paste0(outputPrefix, ".vst-transfor
 # write.csv(Ad.An, file = paste0(outputPrefix, ".Ad.An.results.csv"))
 # write.csv(WD.pd, file = paste0(outputPrefix, ".WD.pd.results.csv"))
 
-save(countTable, phenoData, dds, rawCounts, rld, vsd, custom, file = paste0(outputPrefix, ".Rdata"))
 
 custom <- results(dds, contrast=c("condition", numerator, denominator), alpha = 0.05)
 mcols(custom, use.names=TRUE) # brief description of res headers
 summary(custom)
 
+save(countTable, phenoData, dds, rawCounts, rld, vsd, custom, file = paste0(outputPrefix, ".Rdata"))
 write.csv(custom, file = paste0(outputPrefix, ".", numerator, ".", denominator, ".results.csv"))
 
 custom
