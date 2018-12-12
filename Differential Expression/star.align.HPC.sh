@@ -13,6 +13,7 @@
 #SBATCH -n 12
 #SBATCH --mem-per-cpu=18000
 
+set -e 
 
 if [  $1 == "help" ]; then
 
