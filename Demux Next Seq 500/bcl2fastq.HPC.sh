@@ -19,7 +19,7 @@
 
 
 
-
+set -e 
 
 # To display help run bash bcl2fastq.HPC.sh help
 if [  $1 == "help"  ]; then
