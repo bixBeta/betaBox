@@ -1,0 +1,5 @@
+sample.name,sample.id,pipeline,assembly,treatment
+Sum149PT_100nM_TSA_S5_R1_001_bismark_bt2_pe.bismark.cov,control,bismarkCoverage,hg38,0
+Sum149PT_350nM_JQ1_S3_R1_001_bismark_bt2_pe.bismark.cov,control,bismarkCoverage,hg38,0
+Sum149PT_100nM_TSA_BS_S7_R1_001_bismark_bt2_pe.bismark.cov,treat,bismarkCoverage,hg38,1
+Sum149PT_350nM_JQ1_BS_S6_R1_001_bismark_bt2_pe.bismark.cov,treat,bismarkCoverage,hg38,1
